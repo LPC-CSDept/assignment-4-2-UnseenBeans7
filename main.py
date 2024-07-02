@@ -11,7 +11,11 @@ def main():
     Code Your Program here
     ########################################
     """
-
+    for i in range(2, N):
+        num = result[i-1] + result[i-2]
+        result.append(num)
+        
+    print(*result)
     ########################################
     # Do not delete the return statement
     ########################################
